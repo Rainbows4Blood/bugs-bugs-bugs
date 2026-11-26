@@ -1,0 +1,20 @@
+{
+  "name": "bugs-bugs-bugs",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A three.js short film: computer bugs invade the OpenAI headquarters.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node scripts/make-embed.mjs",
+    "preview": "vite preview",
+    "render": "npm run build && node scripts/render-mp4.mjs"
+  },
+  "dependencies": {
+    "three": "0.187.0"
+  },
+  "devDependencies": {
+    "vite": "^8.3.8",
+    "vite-plugin-singlefile": "^2.3.4"
+  }
+}
